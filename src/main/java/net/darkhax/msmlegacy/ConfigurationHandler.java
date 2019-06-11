@@ -43,7 +43,7 @@ public class ConfigurationHandler {
     	EnumEnchantmentType type = allowEnchOnAllSwords ? EnumEnchantmentType.WEAPON : EnumHelper.addEnchantmentType("MSM_LEGACY_" + id.toUpperCase(), item -> item == sword);
         rarity = this.getRarity(id, rarity, category, "The rarity for the " + id + " enchantment. Accepts COMMON, UNCOMMON, RARE, VERY_RARE");     
         min = config.getInt("minLevel_" + id, category, min, 1, 128, "The min level for the " + id + " enchantment.");
-        max = config.getInt("maxLevel", category, max, min, 128, "The max level for the " + id + " enchantment.");
+        max = config.getInt("maxLevel_" + id, category, max, min, 128, "The max level for the " + id + " enchantment.");
         Enchantment enchant = new EnchantmentSwordLegacy(rarity, sword, type, min, max);
         enchant.setName(id);
         return enchant;
@@ -62,7 +62,7 @@ public class ConfigurationHandler {
     	return rarity;
     }
     
-    private void syncConfigData () {
+    public void syncConfigData () {
 
 
     	if (config.hasChanged()) {

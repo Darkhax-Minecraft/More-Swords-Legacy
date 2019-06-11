@@ -6,6 +6,7 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityCreeper;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.init.PotionTypes;
 import net.minecraft.item.ItemStack;
@@ -38,6 +39,8 @@ public class EnchantmentEffectHandler {
 				checkAndApplyEffect(msm.ignite, target, attacker, heldItem, EnchantmentEffectHandler::handleIgniteEffect);
 				checkAndApplyEffect(msm.sparks, target, attacker, heldItem, EnchantmentEffectHandler::handleSparksEffect);
 				checkAndApplyEffect(msm.feast, target, attacker, heldItem, EnchantmentEffectHandler::handleFeastEffect);
+				checkAndApplyEffect(msm.venomousAspect, target, attacker, heldItem, EnchantmentEffectHandler::handleVenomousAspect);
+				checkAndApplyEffect(msm.absorb, target, attacker, heldItem, EnchantmentEffectHandler::handleAbsorbEffect);
 			}
 		}
 	}
@@ -49,6 +52,21 @@ public class EnchantmentEffectHandler {
 			
 			checkAndApplyEffect(msm.vitality, event.getEntityPlayer(), event.getEntityPlayer(), event.getItemStack(), EnchantmentEffectHandler::handleVitalityEffect);
 		}
+	}
+	
+	private static void handleAbsorbEffect(EntityLivingBase attacker, EntityLivingBase target, ItemStack item, int level) {
+		
+		if (attacker instanceof EntityPlayer && MathsUtils.tryPercentage(0.05 * level)) {
+			
+			final EntityPlayer player = (EntityPlayer) attacker;
+			final int foodAmount = MathsUtils.nextIntInclusive(0, 2);
+			player.getFoodStats().addStats(foodAmount, foodAmount);
+		}
+	}
+	
+	private static void handleVenomousAspect(EntityLivingBase attacker, EntityLivingBase target, ItemStack item, int level) {
+		
+		target.addPotionEffect(new PotionEffect(MobEffects.POISON, 120 * level, 0));
 	}
 	
 	private static void handleVitalityEffect(EntityLivingBase attacker, EntityLivingBase target, ItemStack item, int level) {
