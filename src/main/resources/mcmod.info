@@ -1,0 +1,15 @@
+[  
+   {  
+      "modid":"msmlegacy",
+      "name":"More Swords Legacy",
+      "description":"A remastered version of More Swords 2 for newer versions of Minecraft.",
+      "version":"${version}",
+      "mcversion":"${mcversion}",
+      "url":"https://minecraft.curseforge.com/projects/more-swords-legacy",
+      "updateUrl":"",
+      "authorList":[  
+         "Darkhax"
+      ],
+      "credits":"Starils, Thisguy1045, Vydax, InsectKing142"
+   }
+]
