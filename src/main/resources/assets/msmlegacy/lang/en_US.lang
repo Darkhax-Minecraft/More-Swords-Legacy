@@ -35,7 +35,7 @@ enchantment.msmlegacy.consuming_shadows=Consuming Shadows
 enchantment.msmlegacy.stealth=Stealth
 enchantment.msmlegacy.extinction=Extinction
 
-#Enchantment Descriptions
+# Enchantment Descriptions
 enchantment.msmlegacy.ignite.desc=Attacks will deal additional fire damage.
 enchantment.msmlegacy.sparks.desc=Attacks will cause enemies near your target to catch on fire.
 enchantment.msmlegacy.feast.desc=Attacking mobs has a chance to restore some durability.
@@ -56,3 +56,15 @@ enchantment.msmlegacy.decay.desc=Attacks will inflict your enemy with wither and
 enchantment.msmlegacy.consuming_shadows.desc=Attacks will inflict nearby enemies with wither and blindness.
 enchantment.msmlegacy.stealth.desc=Right clicking will make you invisible. Right click again to disable.
 enchantment.msmlegacy.extinction.desc=Attacking a mob will cause all mobs of that type in the world to die.
+
+# JEI Descriptions
+jei.item.msmlegacy.dawn.star=A blade forged with the heat of the nether.
+jei.item.msmlegacy.vampiric.blade=A blade with a taste for blood.
+jei.item.msmlegacy.gladiolus=A blade embued with the force of nature.
+jei.item.msmlegacy.draconic.blade=A blade forged with the arcane energy of dragons.
+jei.item.msmlegacy.eye.end.blade=A blade infused with ender energy.
+jei.item.msmlegacy.crystaline.blade=A crystal blade that radiates light.
+jei.item.msmlegacy.glacial.blade=A blade made from ancient ice.
+jei.item.msmlegacy.aethers.guard=A blade that commands the wind and skies.
+jei.item.msmlegacy.wither.bane=A necrotic blade that pulses with dark energy.
+jei.item.msmlegacy.adminium.ark=An ancient and unyielding blade from long ago. It is said that only a server admin may wield it.
