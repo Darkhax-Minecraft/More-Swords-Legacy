@@ -1,9 +1,12 @@
 package net.darkhax.msmlegacy;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 import net.darkhax.bookshelf.registry.RegistryHelper;
 import net.darkhax.bookshelf.util.OreDictUtils;
+import net.darkhax.msmlegacy.item.ItemSwordRelic;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantment.Rarity;
@@ -22,6 +25,8 @@ public class MSMLegacy {
     private final CreativeTabs creativeTab = new CreativeTabMSMLegacy();
     public final RegistryHelper registry = new RegistryHelper("msmlegacy").setTab(this.creativeTab).enableAutoRegistration();
     public final ConfigurationHandler config = new ConfigurationHandler(new File("config/msmlegacy.cfg"));
+    private final String[] relicNames = { "aqueous", "candy", "infinity", "keyblade", "master", "molten", "pie" };
+    public final List<Item> relics = new ArrayList<>();
 
     public Item dawnStar;
     public Enchantment ignite;
@@ -115,6 +120,11 @@ public class MSMLegacy {
         this.stealth = this.registry.registerEnchantment(this.config.getSwordEnchantment("stealth", this.adminiumArk, Rarity.COMMON, 1, 3), "stealth");
         this.extinction = this.registry.registerEnchantment(this.config.getSwordEnchantment("extinction", this.adminiumArk, Rarity.RARE, 1, 1), "extinction");
         this.registry.addShapedRecipe("adminium_ark", new ItemStack(this.adminiumArk), " bb", "fcb", "sf ", 'b', Blocks.BEDROCK, 'f', Blocks.END_PORTAL_FRAME, 'c', Blocks.COMMAND_BLOCK, 's', OreDictUtils.STICK_WOOD);
+
+        for (final String relicName : this.relicNames) {
+
+            this.relics.add(this.registry.registerItem(new ItemSwordRelic(), "relic_" + relicName));
+        }
 
         this.config.syncConfigData();
     }

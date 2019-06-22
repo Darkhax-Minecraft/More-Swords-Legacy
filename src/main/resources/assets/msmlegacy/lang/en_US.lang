@@ -1,5 +1,6 @@
 # Misc
 itemGroup.msmlegacy=More Swords: Legacy
+msmlegacy.relic.count=Relic %d of %d.
 
 # Item Names
 item.msmlegacy.dawn.star.name=§6Dawn Star
@@ -68,3 +69,21 @@ jei.item.msmlegacy.glacial.blade=A blade made from ancient ice.
 jei.item.msmlegacy.aethers.guard=A blade that commands the wind and skies.
 jei.item.msmlegacy.wither.bane=A necrotic blade that pulses with dark energy.
 jei.item.msmlegacy.adminium.ark=An ancient and unyielding blade from long ago. It is said that only a server admin may wield it.
+
+# Relic Names
+item.msmlegacy.relic.aqueous.name=Aqueous Blade
+item.msmlegacy.relic.candy.name=Candy Cane Blade
+item.msmlegacy.relic.infinity.name=Infinity Blade
+item.msmlegacy.relic.keyblade.name=Keyblade
+item.msmlegacy.relic.master.name=Master Sword
+item.msmlegacy.relic.molten.name=Molten Blade
+item.msmlegacy.relic.pie.name=Pieblade
+
+# Relic Descriptions
+jei.item.msmlegacy.relic.aqueous=A sword based on water and the ocean. It was later replaced by the Glacial Edge.
+jei.item.msmlegacy.relic.candy=A festive sword that was part of a long forgotten holiday event.
+jei.item.msmlegacy.relic.infinity=A sword based on a game with the same name.
+jei.item.msmlegacy.relic.keyblade=A blade based on the Kingdom Heart's keyblade. It's made with Lapis Lazuli.
+jei.item.msmlegacy.relic.master=A sword based on the Master Sword from the Legend of Zelda series.
+jei.item.msmlegacy.relic.molten=A sword based on lava. It was later replaced by the Dawn Star.
+jei.item.msmlegacy.relic.pie=A blade that was part of a long forgtten holiday event.

@@ -10,16 +10,21 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityXPOrb;
+import net.minecraft.entity.monster.EntitySkeleton;
+import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.RayTraceResult.Type;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.entity.living.LivingSpawnEvent.SpecialSpawn;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickItem;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -91,6 +96,20 @@ public class EnchantmentEffectHandler {
         if (!heldItem.isEmpty()) {
 
             checkAndApplyEffect(msm.descension, player, heldItem, EnchantmentEffectHandler::handleDescensionEffect);
+        }
+    }
+
+    @SubscribeEvent
+    public static void onSpecialSpawn (SpecialSpawn event) {
+
+        if ((event.getEntity() instanceof EntitySkeleton || event.getEntity() instanceof EntityZombie) && MathsUtils.tryPercentage(0.01)) {
+
+            final Item item = msm.registry.getItems().get(event.getWorld().rand.nextInt(msm.registry.getItems().size()));
+
+            if (item != msm.adminiumArk) {
+
+                event.getEntityLiving().setHeldItem(EnumHand.MAIN_HAND, new ItemStack(item));
+            }
         }
     }
 
