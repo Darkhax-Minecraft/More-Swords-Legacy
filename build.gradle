@@ -52,15 +52,25 @@ minecraft {
 }
 
 repositories {
-    maven {
 
+    maven {   
+        url 'http://tehnut.info/maven'
+    }
+    
+    maven {
         url 'https://maven.mcmoddev.com'
+    }
+	
+	maven {
+        url 'http://dvs1.progwml6.com/files/maven'
     }
 }
 
 dependencies {
 
     deobfCompile "net.darkhax.bookshelf:Bookshelf-1.12.2:${version_bookshelf}"
+	deobfCompile "mcp.mobius.waila:Hwyla:${version_hwyla}"
+	deobfCompile "mezz.jei:jei_1.12.2:${version_jei}"
 }
 
 processResources {

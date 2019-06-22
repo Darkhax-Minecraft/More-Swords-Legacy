@@ -7,29 +7,29 @@ import net.minecraft.item.Item;
 
 public class EnchantmentSwordLegacy extends Enchantment {
 
-	private static final EntityEquipmentSlot[] slots = new EntityEquipmentSlot[] {EntityEquipmentSlot.MAINHAND};
-	
-	private final Item intendedItem;
-	private final int minLevel;
-	private final int maxLevel;
-	
-	public EnchantmentSwordLegacy(Rarity rarityIn, Item item, EnumEnchantmentType typeIn, int min, int max) {
-		
-		super(rarityIn, typeIn, slots);
-		this.intendedItem = item;
-		this.minLevel = min;
-		this.maxLevel = max;
-	}
-	
-	@Override
-    public int getMinLevel() {
-    	
-        return minLevel;
+    private static final EntityEquipmentSlot[] slots = new EntityEquipmentSlot[] { EntityEquipmentSlot.MAINHAND };
+
+    private final Item intendedItem;
+    private final int minLevel;
+    private final int maxLevel;
+
+    public EnchantmentSwordLegacy (Rarity rarityIn, Item item, EnumEnchantmentType typeIn, int min, int max) {
+
+        super(rarityIn, typeIn, slots);
+        this.intendedItem = item;
+        this.minLevel = min;
+        this.maxLevel = max;
     }
 
-	@Override
-    public int getMaxLevel() {
-    	
-        return maxLevel;
+    @Override
+    public int getMinLevel () {
+
+        return this.minLevel;
+    }
+
+    @Override
+    public int getMaxLevel () {
+
+        return this.maxLevel;
     }
 }

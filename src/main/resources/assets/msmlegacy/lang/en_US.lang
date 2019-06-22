@@ -1,4 +1,7 @@
+# Misc
 itemGroup.msmlegacy=More Swords: Legacy
+
+# Item Names
 item.msmlegacy.dawn.star.name=§6Dawn Star
 item.msmlegacy.vampiric.blade.name=§4Vampiric Blade
 item.msmlegacy.gladiolus.name=§2Gladiolus
@@ -9,3 +12,47 @@ item.msmlegacy.glacial.blade.name=§9Glacial Blade
 item.msmlegacy.aethers.guard.name=§bAether's Guard
 item.msmlegacy.wither.bane.name=§8Wither's Bane
 item.msmlegacy.adminium.ark.name=§dAdminium Ark
+
+# Enchantment Names
+enchantment.msmlegacy.ignite=Ignite
+enchantment.msmlegacy.sparks=Sparks
+enchantment.msmlegacy.feast=Feast
+enchantment.msmlegacy.vitality=Vitality
+enchantment.msmlegacy.venomous_aspect=Venomous Aspect
+enchantment.msmlegacy.absorb=Absorb
+enchantment.msmlegacy.keen_edge=Keen Edge
+enchantment.msmlegacy.scorn=Scorn
+enchantment.msmlegacy.ender_pulse=Ender Pulse
+enchantment.msmlegacy.ender_aura=Ender Aura
+enchantment.msmlegacy.greed=Greed
+enchantment.msmlegacy.wisdom=Wisdom
+enchantment.msmlegacy.frozen_aspect=Frozen Aspect
+enchantment.msmlegacy.frost_wave=Frost Wave
+enchantment.msmlegacy.ascension=Ascension
+enchantment.msmlegacy.descension=Descension
+enchantment.msmlegacy.decay=Decay
+enchantment.msmlegacy.consuming_shadows=Consuming Shadows
+enchantment.msmlegacy.stealth=Stealth
+enchantment.msmlegacy.extinction=Extinction
+
+#Enchantment Descriptions
+enchantment.msmlegacy.ignite.desc=Attacks will deal additional fire damage.
+enchantment.msmlegacy.sparks.desc=Attacks will cause enemies near your target to catch on fire.
+enchantment.msmlegacy.feast.desc=Attacking mobs has a chance to restore some durability.
+enchantment.msmlegacy.vitality.desc=Right clicking the item will give you buffs, but consume some durability.
+enchantment.msmlegacy.venomous_aspect.desc=Attacks will inflict poison.
+enchantment.msmlegacy.absorb.desc=Attacks have a chance to heal your hunger and saturation.
+enchantment.msmlegacy.keen_edge.desc=Increases the general damage dealt by attacks.
+enchantment.msmlegacy.scorn.desc=Multiplies the damage dealt while in other dimensions.
+enchantment.msmlegacy.ender_pulse.desc=Allows you to teleport to where you are looking by right clicking.
+enchantment.msmlegacy.ender_aura.desc=Gives you a chance to teleport to a random nearby mob when taking damage.
+enchantment.msmlegacy.greed.desc=Attacks have a chance to spawn additional EXP orbs.
+enchantment.msmlegacy.wisdom.desc=Attacks deal more damage the higher your level is.
+enchantment.msmlegacy.frozen_aspect.desc=Attacks will inflict enemies with slowness.
+enchantment.msmlegacy.frost_wave.desc=Attacks will inflict enemies near your target with slowness.
+enchantment.msmlegacy.ascension.desc=Attacks will launch your enemy into the air.
+enchantment.msmlegacy.descension.desc=Sneaking while falling will slow down your fall speed.
+enchantment.msmlegacy.decay.desc=Attacks will inflict your enemy with wither and hunger.
+enchantment.msmlegacy.consuming_shadows.desc=Attacks will inflict nearby enemies with wither and blindness.
+enchantment.msmlegacy.stealth.desc=Right clicking will make you invisible. Right click again to disable.
+enchantment.msmlegacy.extinction.desc=Attacking a mob will cause all mobs of that type in the world to die.
