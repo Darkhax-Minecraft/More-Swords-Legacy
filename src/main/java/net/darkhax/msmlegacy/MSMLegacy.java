@@ -117,7 +117,7 @@ public class MSMLegacy {
         this.registry.addShapedRecipe("wither_bane", new ItemStack(this.withersBane), " ss", "qns", "kq ", 's', Blocks.SOUL_SAND, 'q', OreDictUtils.GEM_QUARTZ, 'n', OreDictUtils.NETHER_STAR, 'k', OreDictUtils.STICK_WOOD);
 
         this.adminiumArk = this.registry.registerItem(new ItemSword(this.config.getMaterial("adminium_ark", 3, 9999999, 8, 99999, 999)), "adminium_ark");
-        this.stealth = this.registry.registerEnchantment(this.config.getSwordEnchantment("stealth", this.adminiumArk, Rarity.COMMON, 1, 3), "stealth");
+        this.stealth = this.registry.registerEnchantment(this.config.getSwordEnchantment("stealth", this.adminiumArk, Rarity.COMMON, 1, 1), "stealth");
         this.extinction = this.registry.registerEnchantment(this.config.getSwordEnchantment("extinction", this.adminiumArk, Rarity.RARE, 1, 1), "extinction");
         this.registry.addShapedRecipe("adminium_ark", new ItemStack(this.adminiumArk), " bb", "fcb", "sf ", 'b', Blocks.BEDROCK, 'f', Blocks.END_PORTAL_FRAME, 'c', Blocks.COMMAND_BLOCK, 's', OreDictUtils.STICK_WOOD);
 
