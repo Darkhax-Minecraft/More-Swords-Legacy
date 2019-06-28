@@ -47,7 +47,7 @@ public class ConfigurationHandler {
         rarity = this.getRarity(id, rarity, category, "The rarity for the " + id + " enchantment. Accepts COMMON, UNCOMMON, RARE, VERY_RARE");
         min = this.config.getInt("minLevel_" + id, category, min, 1, 128, "The min level for the " + id + " enchantment.");
         max = this.config.getInt("maxLevel_" + id, category, max, min, 128, "The max level for the " + id + " enchantment.");
-        final Enchantment enchant = new EnchantmentSwordLegacy(rarity, sword, type, min, max);
+        final Enchantment enchant = new EnchantmentSwordLegacy(rarity, sword, type, min, max, survivalAllowed);
         enchant.setName("msmlegacy." + id);
         return enchant;
     }
