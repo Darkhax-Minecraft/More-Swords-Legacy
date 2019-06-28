@@ -36,9 +36,14 @@ public class ConfigurationHandler {
     }
 
     public Enchantment getSwordEnchantment (String id, Item sword, Rarity rarity, int min, int max) {
+        
+        return this.getSwordEnchantment(id, sword, rarity, min, max, true);
+    }
+    
+    public Enchantment getSwordEnchantment (String id, Item sword, Rarity rarity, int min, int max, boolean survivalAllowed) {
 
         final String category = sword.getRegistryName().getPath();
-        final EnumEnchantmentType type = this.allowEnchOnAllSwords ? EnumEnchantmentType.WEAPON : EnumHelper.addEnchantmentType("MSM_LEGACY_" + id.toUpperCase(), item -> item == sword);
+        final EnumEnchantmentType type = this.allowEnchOnAllSwords && survivalAllowed ? EnumEnchantmentType.WEAPON : EnumHelper.addEnchantmentType("MSM_LEGACY_" + id.toUpperCase(), item -> item == sword);
         rarity = this.getRarity(id, rarity, category, "The rarity for the " + id + " enchantment. Accepts COMMON, UNCOMMON, RARE, VERY_RARE");
         min = this.config.getInt("minLevel_" + id, category, min, 1, 128, "The min level for the " + id + " enchantment.");
         max = this.config.getInt("maxLevel_" + id, category, max, min, 128, "The max level for the " + id + " enchantment.");
