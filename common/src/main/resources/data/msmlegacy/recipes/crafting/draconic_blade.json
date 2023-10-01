@@ -1,0 +1,30 @@
+{
+  "type": "crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " ir",
+    "ldi",
+    "sl "
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    },
+    "l": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "msmlegacy:draconic_blade"
+  },
+  "show_notification": true
+}

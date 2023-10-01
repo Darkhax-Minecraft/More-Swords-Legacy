@@ -1,0 +1,27 @@
+{
+  "type": "crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " ir",
+    "ori",
+    "so "
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    },
+    "o": {
+      "item": "minecraft:obsidian"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "msmlegacy:vampiric_blade"
+  },
+  "show_notification": true
+}

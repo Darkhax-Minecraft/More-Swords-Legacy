@@ -1,0 +1,33 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "${mod_license}"
+issueTrackerURL = "${mod_issues}"
+logoFile = "logo.png"
+logoBlur = false
+
+[[mods]]
+modId = "${mod_id}"
+version = "${file.jarVersion}"
+displayName = "${mod_name}"
+displayURL = "${mod_homepage}"
+updateJSONURL="https://updates.blamejared.com/get?n=${mod_id}&gv=${minecraft_version}"
+credits = "This project is made possible with Patreon support from players like you. Thank you! ${mod_supporters}"
+authors = "${mod_author}"
+description = '''
+${mod_description}
+'''
+itemIcon = "coinsje:gold_coin_pile"
+
+[[dependencies.${ mod_id }]]
+modId = "bookshelf"
+mandatory = true
+versionRange = "[20,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"

@@ -1,0 +1,73 @@
+{
+  "parent": "msmlegacy:relics/root",
+  "display": {
+    "announce_to_chat": true,
+    "title": {
+      "translate": "advancements.msmlegacy.relics.relic_adminium_ark.title"
+    },
+    "description": {
+      "translate": "advancements.msmlegacy.relics.relic_adminium_ark.description"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "msmlegacy:relic_adminium_ark"
+    },
+    "show_toast": true
+  },
+  "criteria": {
+    "have_all_relics": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "msmlegacy:relic_aqueous_blade"
+            ]
+          },
+          {
+            "items": [
+              "msmlegacy:relic_blaze_sword"
+            ]
+          },
+          {
+            "items": [
+              "msmlegacy:relic_infinity_blade"
+            ]
+          },
+          {
+            "items": [
+              "msmlegacy:relic_key_blade"
+            ]
+          },
+          {
+            "items": [
+              "msmlegacy:relic_master_sword"
+            ]
+          },
+          {
+            "items": [
+              "msmlegacy:relic_molten_blade"
+            ]
+          },
+          {
+            "items": [
+              "msmlegacy:relic_pie_cutter"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "have_all_relics"
+    ]
+  ],
+  "rewards": {
+    "experience": 250,
+    "loot": [
+      "msmlegacy:gameplay/relics/complete_relic_quest"
+    ]
+  }
+}

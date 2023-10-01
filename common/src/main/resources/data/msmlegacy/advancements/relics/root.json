@@ -1,0 +1,35 @@
+{
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/blackstone.png",
+    "title": {
+      "translate": "advancements.msmlegacy.relics.title"
+    },
+    "description": {
+      "translate": "advancements.msmlegacy.relics.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "msmlegacy:relic_adminium_ark"
+    },
+    "show_toast": false
+  },
+  "criteria": {
+    "get_any_relic": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "msmlegacy:relics"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "get_any_relic"
+    ]
+  ]
+}

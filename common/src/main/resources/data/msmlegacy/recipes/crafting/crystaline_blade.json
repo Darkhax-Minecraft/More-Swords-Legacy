@@ -1,0 +1,24 @@
+{
+  "type": "crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " qp",
+    "qpq",
+    "sq "
+  ],
+  "key": {
+    "q": {
+      "item": "minecraft:quartz"
+    },
+    "p": {
+      "item": "minecraft:glass_pane"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "msmlegacy:crystaline_blade"
+  },
+  "show_notification": true
+}

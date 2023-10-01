@@ -1,0 +1,30 @@
+{
+  "type": "crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " lv",
+    "sfl",
+    "ts "
+  ],
+  "key": {
+    "l": {
+      "tag": "minecraft:leaves"
+    },
+    "v": {
+      "item": "minecraft:vine"
+    },
+    "s": {
+      "tag": "minecraft:saplings"
+    },
+    "f": {
+      "item": "minecraft:blue_orchid"
+    },
+    "t": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "msmlegacy:gladiolus"
+  },
+  "show_notification": true
+}

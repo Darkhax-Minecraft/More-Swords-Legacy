@@ -1,0 +1,37 @@
+{
+  "parent": "msmlegacy:relics/root",
+  "display": {
+    "announce_to_chat": true,
+    "title": {
+      "translate": "advancements.msmlegacy.relics.relic_infinity_blade.title"
+    },
+    "description": {
+      "translate": "advancements.msmlegacy.relics.relic_infinity_blade.description"
+    },
+    "frame": "goal",
+    "hidden": true,
+    "icon": {
+      "item": "msmlegacy:relic_infinity_blade"
+    },
+    "show_toast": true
+  },
+  "criteria": {
+    "get_relic": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "msmlegacy:relic_infinity_blade"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "get_relic"
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "msmlegacy:relics/root",
+  "display": {
+    "announce_to_chat": true,
+    "title": {
+      "translate": "advancements.msmlegacy.relics.relic_pie_cutter.title"
+    },
+    "description": {
+      "translate": "advancements.msmlegacy.relics.relic_pie_cutter.description"
+    },
+    "frame": "goal",
+    "hidden": true,
+    "icon": {
+      "item": "msmlegacy:relic_pie_cutter"
+    },
+    "show_toast": true
+  },
+  "criteria": {
+    "get_relic": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "msmlegacy:relic_pie_cutter"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "get_relic"
+    ]
+  ]
+}

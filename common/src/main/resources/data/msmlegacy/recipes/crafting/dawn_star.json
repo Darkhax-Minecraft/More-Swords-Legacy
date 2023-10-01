@@ -1,0 +1,27 @@
+{
+  "type": "crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "bcm",
+    "cmc",
+    "rcb"
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:blaze_powder"
+    },
+    "c": {
+      "item": "minecraft:fire_charge"
+    },
+    "m": {
+      "item": "minecraft:magma_cream"
+    },
+    "r": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "msmlegacy:dawn_star"
+  },
+  "show_notification": true
+}

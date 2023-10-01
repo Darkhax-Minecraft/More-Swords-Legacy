@@ -1,0 +1,27 @@
+{
+  "type": "crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " ib",
+    "pbi",
+    "sp "
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:ice"
+    },
+    "p": {
+      "item": "minecraft:packed_ice"
+    },
+    "b": {
+      "item": "minecraft:blue_ice"
+    },
+    "s": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "msmlegacy:glacial_blade"
+  },
+  "show_notification": true
+}

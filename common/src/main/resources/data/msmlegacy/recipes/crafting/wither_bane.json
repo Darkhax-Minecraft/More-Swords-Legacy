@@ -1,0 +1,30 @@
+{
+  "type": "crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " qa",
+    "ntq",
+    "sn "
+  ],
+  "key": {
+    "n": {
+      "item": "netherite_ingot"
+    },
+    "a": {
+      "item": "minecraft:soul_sand"
+    },
+    "q": {
+      "item": "minecraft:quartz"
+    },
+    "t": {
+      "item": "minecraft:nether_star"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "msmlegacy:wither_bane"
+  },
+  "show_notification": true
+}

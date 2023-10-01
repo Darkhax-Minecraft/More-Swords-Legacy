@@ -1,0 +1,27 @@
+{
+  "type": "crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " de",
+    "ped",
+    "sp "
+  ],
+  "key": {
+    "p": {
+      "item": "minecraft:ender_pearl"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "e": {
+      "item": "minecraft:ender_eye"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "msmlegacy:eye_end_blade"
+  },
+  "show_notification": true
+}
