@@ -1,12 +1,9 @@
 package net.darkhax.msmlegacy.enchantments;
 
 import net.darkhax.msmlegacy.MSMContent;
-import net.darkhax.msmlegacy.config.enchantment.GreedConfig;
 import net.darkhax.msmlegacy.config.enchantment.WisdomConfig;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.LivingEntity;
 
 public class EnchantmentWisdom extends SwordEnchantment {

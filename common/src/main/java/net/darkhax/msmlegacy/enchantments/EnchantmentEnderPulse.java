@@ -1,6 +1,5 @@
 package net.darkhax.msmlegacy.enchantments;
 
-import net.darkhax.bookshelf.api.util.MathsHelper;
 import net.darkhax.bookshelf.api.util.PlayerHelper;
 import net.darkhax.msmlegacy.MSMContent;
 import net.darkhax.msmlegacy.config.enchantment.EnderPulseConfig;

@@ -1,7 +1,6 @@
 package net.darkhax.msmlegacy.enchantments;
 
 import net.darkhax.msmlegacy.MSMContent;
-import net.darkhax.msmlegacy.config.enchantment.AbsorbConfig;
 import net.darkhax.msmlegacy.config.enchantment.VenomousAspectConfig;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;

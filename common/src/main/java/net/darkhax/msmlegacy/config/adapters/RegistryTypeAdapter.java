@@ -3,14 +3,10 @@ package net.darkhax.msmlegacy.config.adapters;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.block.BlockRenderDispatcher;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.util.datafix.fixes.BlockStateData;
 import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.entity.Display;
 
 import java.io.IOException;
 

@@ -6,11 +6,11 @@
   "mixins": [
     "MixinDrowned",
     "MixinPiglinAi",
+    "MixinPlayer",
     "MixinRaid",
     "MixinSkeleton",
     "MixinWitherSkeleton",
-    "MixinZombie",
-    "MixinPlayer"
+    "MixinZombie"
   ],
   "injectors": {
     "defaultRequire": 1

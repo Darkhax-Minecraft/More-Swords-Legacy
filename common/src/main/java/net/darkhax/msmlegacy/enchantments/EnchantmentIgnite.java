@@ -1,6 +1,5 @@
 package net.darkhax.msmlegacy.enchantments;
 
-import com.google.gson.annotations.Expose;
 import net.darkhax.msmlegacy.MSMContent;
 import net.darkhax.msmlegacy.config.enchantment.IgniteConfig;
 import net.minecraft.server.level.ServerLevel;

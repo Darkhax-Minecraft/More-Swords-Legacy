@@ -4,9 +4,6 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import net.darkhax.msmlegacy.config.types.EnchantmentConfig;
 import net.darkhax.msmlegacy.config.types.LevelScaledFloat;
-import net.darkhax.msmlegacy.config.types.LevelScaledInt;
-import net.darkhax.msmlegacy.config.types.MobEffectConfig;
-import net.minecraft.world.effect.MobEffects;
 
 public class AscensionConfig extends EnchantmentConfig {
 

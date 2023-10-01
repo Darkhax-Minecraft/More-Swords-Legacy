@@ -2,9 +2,7 @@ package net.darkhax.msmlegacy.enchantments;
 
 import net.darkhax.msmlegacy.MSMContent;
 import net.darkhax.msmlegacy.config.enchantment.FrostWaveConfig;
-import net.darkhax.msmlegacy.config.enchantment.SparksConfig;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.OwnableEntity;
