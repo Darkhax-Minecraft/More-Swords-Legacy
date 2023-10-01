@@ -25,7 +25,8 @@ import net.darkhax.msmlegacy.enchantments.EnchantmentWisdom;
 import net.darkhax.msmlegacy.item.MSMSwordItem;
 import net.darkhax.msmlegacy.item.RelicSwordItem;
 import net.darkhax.msmlegacy.trades.MerchantOfferPieCutter;
-import net.minecraft.world.item.Items;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.enchantment.Enchantment;
 
@@ -47,7 +48,7 @@ public final class MSMContent extends RegistryDataProvider {
 
         super(MOD_ID);
 
-        this.withItemTab(Items.NETHERITE_SWORD::getDefaultInstance);
+        this.withItemTab(() -> BuiltInRegistries.ITEM.get(new ResourceLocation(MOD_ID, "relic_adminium_ark")).getDefaultInstance());
 
         sword("dawn_star", Rarity.RARE, CONFIG.swordStats.dawnStar);
         sword("vampiric_blade", Rarity.RARE, CONFIG.swordStats.vampiricBlade);
