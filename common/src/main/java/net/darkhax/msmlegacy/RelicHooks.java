@@ -8,7 +8,7 @@ import net.darkhax.msmlegacy.config.relics.RelicInfinityBladeConfig;
 import net.darkhax.msmlegacy.config.relics.RelicKeyBladeConfig;
 import net.darkhax.msmlegacy.config.relics.RelicMasterSword;
 import net.darkhax.msmlegacy.config.relics.RelicMoltenBlade;
-import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementHolder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -16,7 +16,6 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
-import net.minecraft.tags.TagManager;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EntityType;
@@ -58,10 +57,6 @@ public class RelicHooks {
 
     public static void setupDrowned(Drowned drowned, RandomSource rng, DifficultyInstance difficulty) {
 
-        drowned.level().registryAccess().registries().forEach(e -> {
-
-            System.out.println(e.key() + " - " + TagManager.getTagDir(e.key()));
-        });
         final RelicAqueousBladeConfig config = MSMContent.CONFIG.relics.aqueousBlade;
 
         // If a drowned doesn't already have a held item it will have a chance to spawn with the aqueous blade relic.
@@ -215,7 +210,7 @@ public class RelicHooks {
 
     public static boolean doesPlayerHaveAdvancement(ServerPlayer player, ResourceLocation id) {
 
-        final Advancement advancement = player.server.getAdvancements().getAdvancement(id);
+        final AdvancementHolder advancement = player.server.getAdvancements().get(id);
         return advancement != null && player.getAdvancements().getOrStartProgress(advancement).isDone();
     }
 
