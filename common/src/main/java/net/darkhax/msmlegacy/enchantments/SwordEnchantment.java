@@ -89,7 +89,18 @@ public class SwordEnchantment extends Enchantment {
         return Component.translatable(this.getDescriptionId());
     }
 
+    @Override
     public boolean canEnchant(ItemStack item) {
+
+        return item.is(this.compatibleItems);
+    }
+
+    /**
+     * This method is provided to satisfy Forge and NeoForge APIs. It is not intended to be directly invoked and is not
+     * considered part of the MSM API. Please use {@link #canEnchant(ItemStack)} instead.
+     */
+    @Deprecated
+    public boolean canApplyAtEnchantingTable(ItemStack item) {
 
         return item.is(this.compatibleItems);
     }
