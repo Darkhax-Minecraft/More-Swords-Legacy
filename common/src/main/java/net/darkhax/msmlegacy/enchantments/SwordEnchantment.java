@@ -67,7 +67,7 @@ public class SwordEnchantment extends Enchantment {
 
             if (holder != null && holder.isPresent()) {
 
-                return !holder.get().is(this.incompatibleEnchantments);
+                return !holder.get().is(this.incompatibleEnchantments) && super.checkCompatibility(other);
             }
         }
 
