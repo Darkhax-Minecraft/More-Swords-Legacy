@@ -10,7 +10,8 @@
     "MixinRaid",
     "MixinSkeleton",
     "MixinWitherSkeleton",
-    "MixinZombie"
+    "MixinZombie",
+    "MixinEnchantmentHelper"
   ],
   "injectors": {
     "defaultRequire": 1
