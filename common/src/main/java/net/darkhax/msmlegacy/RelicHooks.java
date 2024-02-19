@@ -58,10 +58,6 @@ public class RelicHooks {
 
     public static void setupDrowned(Drowned drowned, RandomSource rng, DifficultyInstance difficulty) {
 
-        drowned.level().registryAccess().registries().forEach(e -> {
-
-            System.out.println(e.key() + " - " + TagManager.getTagDir(e.key()));
-        });
         final RelicAqueousBladeConfig config = MSMContent.CONFIG.relics.aqueousBlade;
 
         // If a drowned doesn't already have a held item it will have a chance to spawn with the aqueous blade relic.
