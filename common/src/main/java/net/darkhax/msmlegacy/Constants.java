@@ -5,5 +5,5 @@ import org.slf4j.LoggerFactory;
 
 public class Constants {
 
-    public static final Logger LOGGER = LoggerFactory.getLogger("More Swords: Legacy");
+    public static final Logger LOG = LoggerFactory.getLogger("More Swords: Legacy");
 }
